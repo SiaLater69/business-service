@@ -1,29 +1,22 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Link from 'next/link'
 
-export default function MainPage() {
+export default function Component() {
   return (
     <div className="min-h-screen flex flex-col">
       <header className="fixed w-full z-10">
         <nav className="container mx-auto px-4 py-6">
           <div className="flex justify-between items-center">
-            <div className="flex-1 flex justify-start space-x-4">
-              <Link
-                className="text-white hover:text-gray-300 transition-colors"
-                href="#about"
-              >
-                Services
+            <div className="flex-1 flex justify-start space-x-8">
+              <Link className="text-white hover:text-gray-300 transition-colors font-medium" href="#about">
+                About
               </Link>
-              <Link
-                className="text-white hover:text-gray-300 transition-colors"
-                href="#services"
-              >
-                Clients
+              <Link className="text-white hover:text-gray-300 transition-colors font-medium" href="#services">
+                Services
               </Link>
             </div>
             <div className="flex-1 flex justify-center">
               <Link href="/" className="text-2xl font-bold text-white">
-                <Image
+                <img
                   src="/logo.png"
                   alt="Logo"
                   width={120}
@@ -32,17 +25,11 @@ export default function MainPage() {
                 />
               </Link>
             </div>
-            <div className="flex-1 flex justify-end space-x-4">
-              <Link
-                className="text-white hover:text-gray-300 transition-colors"
-                href="#portfolio"
-              >
-                About US
+            <div className="flex-1 flex justify-end space-x-8">
+              <Link className="text-white hover:text-gray-300 transition-colors font-medium" href="#portfolio">
+                Portfolio
               </Link>
-              <Link
-                className="text-white hover:text-gray-300 transition-colors"
-                href="#contact"
-              >
+              <Link className="text-white hover:text-gray-300 transition-colors font-medium" href="#contact">
                 Contact
               </Link>
             </div>
@@ -50,25 +37,39 @@ export default function MainPage() {
         </nav>
       </header>
       <main className="flex-grow">
-        <section className="h-screen bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-              Welcome to Our Site
-            </h1>
-            <p className="text-xl text-white mb-8">
-              Discover amazing things with us
-            </p>
-            <button className="bg-white text-purple-600 px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors">
-              Get Started
-            </button>
+        <section className="relative h-screen w-full">
+          {/* Background Image */}
+          <div className="absolute inset-0">
+            <img
+              src="/main.png"
+              alt="City skyline at dusk"
+              className="object-cover"
+            />
+            {/* Overlay for better text readability */}
+            <div className="absolute inset-0 bg-black/30" />
+          </div>
+          
+          {/* Content */}
+          <div className="relative h-full flex items-center justify-center">
+            <div className="text-center px-4">
+              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
+                Welcome to the Future
+              </h1>
+              <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Experience innovation and excellence in every project
+              </p>
+              <button className="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-opacity-90 transition-colors text-lg">
+                Get Started
+              </button>
+            </div>
           </div>
         </section>
       </main>
-      <footer className="bg-gray-800 text-white py-8">
+      <footer className="bg-gray-900 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <p>&copy; 2024 Your Company. All rights reserved.</p>
         </div>
       </footer>
     </div>
-  );
+  )
 }
