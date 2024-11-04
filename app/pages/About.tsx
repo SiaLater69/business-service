@@ -30,7 +30,7 @@ export default function About() {
             Our Goal
           </h2>
           <p className="text-gray-600 max-w-xl">
-            Our mission is to help businesses succeed in the ambitious aspirations of Saudi Arabia's 2030 vision. 
+            Our mission is to help businesses succeed in the ambitious aspirations of Saudi Arabia&apos;s 2030 vision. 
         
             <p className='mt-7'>At the heart of our mission lies a dedication to excellence, innovation, and customer-centricity. Our goal is to build long-term relationships and to be known for reliability and professional excellence. Our multifaceted ranget of services offers a comprehensive service suite tailored to meet the diverse needs of our clients.</p>
           </p>
