@@ -8,7 +8,7 @@ export default function About() {
       <div className="flex flex-col lg:flex-row items-center gap-8 py-20">
         <div className="lg:w-1/2">
           <Image
-            src="/about.png" 
+            src="/About.png" 
             alt="about" 
             className="w-full max-w-2xl h-auto object-cover"
           />
@@ -37,7 +37,7 @@ export default function About() {
         </div>
         <div className="lg:w-1/2">
           <Image 
-            src="/goal.png" 
+            src="/Goal.png" 
             alt="goal" 
             className="w-full max-w-2xl h-auto object-cover"
           />
