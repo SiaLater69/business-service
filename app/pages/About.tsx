@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 export default function About() {
@@ -6,7 +7,7 @@ export default function About() {
       {/* First Section */}
       <div className="flex flex-col lg:flex-row items-center gap-8 py-20">
         <div className="lg:w-1/2">
-          <img 
+          <Image
             src="/about.png" 
             alt="about" 
             className="w-full max-w-2xl h-auto object-cover"
@@ -35,7 +36,7 @@ export default function About() {
           </p>
         </div>
         <div className="lg:w-1/2">
-          <img 
+          <Image 
             src="/goal.png" 
             alt="goal" 
             className="w-full max-w-2xl h-auto object-cover"
