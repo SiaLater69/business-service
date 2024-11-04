@@ -37,7 +37,7 @@ const ContactForm = () => {
           <h2 className="text-3xl font-medium text-white">MADE FOR YOU</h2>
           <h1 className="mt-2 text-4xl font-semibold text-white">Connect with our Team</h1>
           <p className="mt-4 text-lg text-white">Ready to take your business to the next level?</p>
-          <p className="mt-2 text-lg text-white">Reach out to us and let's start the conversation.</p>
+          <p className="mt-2 text-lg text-white">Reach out to us and let&apos;s start the conversation.</p>
         </div>
 
         <form onSubmit={handleSubmit} className="mt-8 space-y-6">

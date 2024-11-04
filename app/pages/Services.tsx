@@ -31,7 +31,7 @@ export default function Component() {
             <div className="max-w-3xl mx-auto text-center mb-8">
               <h2 className="text-4xl font-bold text-white mb-6">Our Services</h2>
               <p className="text-white/90 text-lg leading-relaxed">
-                Our mission is to be a trusted partner for companies seeking to thrive within the dynamic landscape of Saudi Arabia's evolving economy. We help businesses fully access, both the national and international, potential of Saudi Arabia's talent pool, seamlessly navigating the intricacies of immigration processes and laws to supply your business with the tools to succeed.
+                Our mission is to be a trusted partner for companies seeking to thrive within the dynamic landscape of Saudi Arabia&apos;s evolving economy. We help businesses fully access, both the national and international, potential of Saudi Arabia&apos;s talent pool, seamlessly navigating the intricacies of immigration processes and laws to supply your business with the tools to succeed.
               </p>
             </div>
 
